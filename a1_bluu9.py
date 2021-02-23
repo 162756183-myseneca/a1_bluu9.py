@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-''' template for ops435 assignment 1 script
-    put your script level docstring here...
-    you can have more than one line of docstring.
-    Please personlize the following author declaration:
+''' 
 -----------------------------------------------------------------------
 OPS435 Assignment 1 - Winter 2021
 Program: a1_bluu9.py (replace [Seneca_name] with your Seneca User name)
