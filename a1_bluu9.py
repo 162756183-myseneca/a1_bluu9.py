@@ -66,13 +66,28 @@ def size_check(obj, intoobj):
 	return status 
 	
 def range_check(obj1, obj2):
-	obj_string = str(obj1) 
-	obj_tuple = tuple(obj_string) 	
-	if obj_tuple in obj2 : 
-		status = False 
-	else :  
-		status = True 
+	month = obj
+	day_int= obj
+	month_check = 0 
 
+	if month in '01,03,05,07,08,10,12' :  
+		month_check = 31 
+
+	elif month_int in '02' : 
+		month_check=28
+
+	else : 
+		month_check = 30 
+
+
+	if day_int > month_check : 
+		status = False 
+
+	else :  
+		status = True 	
+
+
+	return status
 	
 	return status 
  
