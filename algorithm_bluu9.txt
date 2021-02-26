@@ -1,0 +1,67 @@
+The first line will import the sys module so that we can do command line arguments 
+
+
+if statement checking if the argv has no spacing between the numbers
+	if it returns true we put the argv into the string 'DOB'  
+
+else if statement checking if the argument has a '/' in the argv 
+	if the argument has a '/', we replace all of them  with a blank '' and put it in the string 'DOB' 
+
+else if statement checking if the argument has a '-' in the argv
+	  if it does have a '-' replace all them with a blank '' and put the into a string 'DOB' 
+
+else if statement  checking if the argumet has a '.' in the argv 
+	if it does replace all of them with a black '' and put it into a string 'DOB' 
+
+
+Leap year function 
+
+	convert the the year into an integer
+	if year is divisible by 400 then it is a leap year,
+	if year is divisible by 100 the it is not a leap year.
+	else if the year is divisible by 4 then it is a leap year,
+
+month 
+	list of months that are 31 days called 'month_31' as well as another list with months with 30 days called 'month_30'.  
+if the month is in the monht_31 list check to see if the day exceed 31, it is not valid
+if the month is in the month_30 list, check to see if the day exceeds 30 days, it will not be valid 
+if the month is equal to 2, use the leap year function to check if the year is a leap year. then check if the date 28/29 depending if its a leap year or not 
+
+
+size function 
+converts the number into a string, then count how many characters the string object has 
+a string the is equal to how long the length should be  called 'range' 
+compare the range to  the argument, if it's too short it is wrong. if there are too many numbers it is also wrong.
+
+range check 
+
+takes the first 4 numbers as the year and checks if the year is within a certain range.  if the year is less than 1900 or more than 9999 then it will print out an error 
+
+validates if the month number is valid. if it is less than 1, or more than 12, it will print out an error 
+
+   
+
+usage 
+
+
+check to see if there is any argument given.  
+If there is none, print out a description on how to use this script. 
+
+
+sanitize 
+
+a string of characters that are allowed to be used.  
+If the user inputs letters ( october) then it will print out that it will be in the wrong format and not accept it. 
+else we can continue.  
+
+
+VALIDATION
+
+
+Usage: we call the usage function if sys.argv returns nothing, printing out how to use this 
+Month:when we call month and output if the number inputed, if there is anything  that does not match the to lists, it will output an error
+size: the min/max number of characters is 8, if the size check determines there are more than 8 characters it will output an error saying there are to many numbers.  
+Range: your ranges are between 1900 and 9999, if the range from the called function is less than/ greater than these 2 numbers, it will output an error stating it is out of range 
+   
+ 
+
